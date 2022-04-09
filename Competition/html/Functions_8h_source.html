@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Narty: Plik źródłowy Functions.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Narty
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Functions.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Functions_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FUNCTIONS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define FUNCTIONS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Structure_8h.html">Structure.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// File functions</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;std::string <a class="code" href="Functions_8h.html#ab76881ad7dc039440c40fa1ac06c3496">getFileName</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>** argv);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#a83bf808794a8cab646548733818bb380">loadFromFile</a>(<a class="code" href="structListElement.html">ListElement</a>*&amp; head, std::string fileName);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#a2ab1df4bb71cafc37fd81f68c34bd94c">saveToFile</a>(<a class="code" href="structListElement.html">ListElement</a>* head, std::string fileName);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// List functions</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#a1f9835f7a6368370e28aebe6683907ad">addToList</a>(<a class="code" href="structListElement.html">ListElement</a>*&amp; head, <a class="code" href="structContest.html">Contest</a>* contest);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#af2db9d74624f58456b23053bd60819f1">addToSkierList</a>(<a class="code" href="structSkierList.html">SkierList</a>* list, <a class="code" href="structSkier.html">Skier</a>* skier);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<a class="code" href="structContest.html">Contest</a>* <a class="code" href="Functions_8h.html#ae787e80d3e3f7956fd516b3419727bcf">findByPlace</a>(<a class="code" href="structListElement.html">ListElement</a>* head, std::string place);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<a class="code" href="structSkier.html">Skier</a>* <a class="code" href="Functions_8h.html#abafba4eaa19a3975f531d647087db6d2">findByName</a>(<a class="code" href="structSkierList.html">SkierList</a>* list, std::string name);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#a36e0036d76e5544646557b4d866a6b39">sortByResult</a>(<a class="code" href="structSkierList.html">SkierList</a>* skierList);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#af54f7d870246adcce40fe8a6e0cd50a9">sortByPoints</a>(<a class="code" href="structSkierList.html">SkierList</a>* skierList);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#a6a3f4323c9fe6c4d9e5eb86af79b74ee">sortByDate</a>(<a class="code" href="structListElement.html">ListElement</a>*&amp; head);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#a33570068ed2d157e95a40fb0054a4e95">switchSkier</a>(<a class="code" href="structSkier.html">Skier</a>* first, <a class="code" href="structSkier.html">Skier</a>* second);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<a class="code" href="structListElement.html">ListElement</a>* <a class="code" href="Functions_8h.html#a2d1bdfedb71dc37e5e2a7ab9ed02e737">buildNameList</a>(<a class="code" href="structListElement.html">ListElement</a>* head, std::string name);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#ad54dd054e097414e746b9b6930eb9ce4">deleteList</a>(<a class="code" href="structListElement.html">ListElement</a>*&amp; head);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#aa053ca1f498eb3647de90facdc438252">deleteSkierList</a>(<a class="code" href="structSkier.html">Skier</a>*&amp; head);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#a87ac3d9f4a94f3c26faa870001e23dc4">deleteListWithSublist</a>(<a class="code" href="structListElement.html">ListElement</a>*&amp; head);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">// User Input functions</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">int</span> <a class="code" href="Functions_8h.html#a19e5f4b5e19e7088f4b2cf6630f6d064">getIntFromUser</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;std::string <a class="code" href="Functions_8h.html#a3fbbb97fbd1ec6e059ded16c9a2c0179">getStringFromUser</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#a5173d09550d3e49465744b26857d21aa">userInput</a>(<a class="code" href="structListElement.html">ListElement</a>*&amp; head);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#ad8675d0b318f3115499de5b99135f25c">findAndUpdateSkier</a>(<a class="code" href="structSkier.html">Skier</a>* head, <span class="keywordtype">int</span> result);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#a456a8999ec96db802daab96fba302f81">UpdateContest</a>(<a class="code" href="structContest.html">Contest</a>* contest);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// Point functions</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">int</span> <a class="code" href="Functions_8h.html#ac3503159085dcded33b0bf625194547e">calculatePoints</a>(<span class="keywordtype">int</span> result);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">int</span> <a class="code" href="Functions_8h.html#af8cc2c7802c855a7fc497160938b8cb9">dateToNumber</a>(<a class="code" href="structDate.html">Date</a>* date);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<a class="code" href="structSkierList.html">SkierList</a>* <a class="code" href="Functions_8h.html#a08155a5447b3c054a853fc390cf7fb6c">buildRankingList</a>(<a class="code" href="structListElement.html">ListElement</a>* head);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">// Console UI</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#ab13e858612c64eeef73aff1d8a03945e">printMenu</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#aac9856d8e4becaf4d12f5b641074995f">printList</a>(<a class="code" href="structListElement.html">ListElement</a>* head);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#a9f81b1f216c55290c0eea976be13b114">printContest</a>(<a class="code" href="structContest.html">Contest</a>* item);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#a9611bf08463a0cdf840044af68cd9906">printSkier</a>(<a class="code" href="structSkier.html">Skier</a>* skier);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#a7924d8503ea8dee9aa898dcac311f3ad">chooseToEdit</a>(<a class="code" href="structContest.html">Contest</a>* contest);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#a03309815a60204ed1785e9db83cab471">editList</a>(<a class="code" href="structListElement.html">ListElement</a>* head);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#a3d7a98112998393b3dabcc280e5d3048">showRanking</a>(<a class="code" href="structListElement.html">ListElement</a>* head);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#a5ce83ae3764888bf8b88440e6378e070">showScoresByPlace</a>(<a class="code" href="structListElement.html">ListElement</a>* head);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#af1bf0b461ec55ddd83334763caee4572">showScoresByName</a>(<a class="code" href="structListElement.html">ListElement</a>* head);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#a905970ef9943df721fb5a8e32e2ef594">printRanking</a>(<a class="code" href="structSkierList.html">SkierList</a>* list);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Functions_8h.html#a67c7943046fb31c30bfaa1f7f6e77d97">printRecord</a>(<a class="code" href="structSkier.html">Skier</a>* skier, <span class="keywordtype">int</span> number);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif FUNCTIONS_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aFunctions_8h_html_a3fbbb97fbd1ec6e059ded16c9a2c0179"><div class="ttname"><a href="Functions_8h.html#a3fbbb97fbd1ec6e059ded16c9a2c0179">getStringFromUser</a></div><div class="ttdeci">std::string getStringFromUser()</div><div class="ttdef"><b>Definition:</b> UserInputFunctions.cpp:27</div></div>
+<div class="ttc" id="aFunctions_8h_html_a83bf808794a8cab646548733818bb380"><div class="ttname"><a href="Functions_8h.html#a83bf808794a8cab646548733818bb380">loadFromFile</a></div><div class="ttdeci">void loadFromFile(ListElement *&amp;head, std::string fileName)</div><div class="ttdef"><b>Definition:</b> FileFunctions.cpp:18</div></div>
+<div class="ttc" id="aFunctions_8h_html_a67c7943046fb31c30bfaa1f7f6e77d97"><div class="ttname"><a href="Functions_8h.html#a67c7943046fb31c30bfaa1f7f6e77d97">printRecord</a></div><div class="ttdeci">void printRecord(Skier *skier, int number)</div><div class="ttdef"><b>Definition:</b> ConsoleUI.cpp:138</div></div>
+<div class="ttc" id="aFunctions_8h_html_ac3503159085dcded33b0bf625194547e"><div class="ttname"><a href="Functions_8h.html#ac3503159085dcded33b0bf625194547e">calculatePoints</a></div><div class="ttdeci">int calculatePoints(int result)</div><div class="ttdef"><b>Definition:</b> PointFunctions.cpp:16</div></div>
+<div class="ttc" id="astructListElement_html"><div class="ttname"><a href="structListElement.html">ListElement</a></div><div class="ttdef"><b>Definition:</b> Structure.h:45</div></div>
+<div class="ttc" id="aFunctions_8h_html_a33570068ed2d157e95a40fb0054a4e95"><div class="ttname"><a href="Functions_8h.html#a33570068ed2d157e95a40fb0054a4e95">switchSkier</a></div><div class="ttdeci">void switchSkier(Skier *first, Skier *second)</div><div class="ttdef"><b>Definition:</b> ListFunctions.cpp:233</div></div>
+<div class="ttc" id="aFunctions_8h_html_a36e0036d76e5544646557b4d866a6b39"><div class="ttname"><a href="Functions_8h.html#a36e0036d76e5544646557b4d866a6b39">sortByResult</a></div><div class="ttdeci">void sortByResult(SkierList *skierList)</div><div class="ttdef"><b>Definition:</b> ListFunctions.cpp:155</div></div>
+<div class="ttc" id="aFunctions_8h_html_a5ce83ae3764888bf8b88440e6378e070"><div class="ttname"><a href="Functions_8h.html#a5ce83ae3764888bf8b88440e6378e070">showScoresByPlace</a></div><div class="ttdeci">void showScoresByPlace(ListElement *head)</div><div class="ttdef"><b>Definition:</b> ConsoleUI.cpp:106</div></div>
+<div class="ttc" id="aFunctions_8h_html_af54f7d870246adcce40fe8a6e0cd50a9"><div class="ttname"><a href="Functions_8h.html#af54f7d870246adcce40fe8a6e0cd50a9">sortByPoints</a></div><div class="ttdeci">void sortByPoints(SkierList *skierList)</div><div class="ttdef"><b>Definition:</b> ListFunctions.cpp:194</div></div>
+<div class="ttc" id="aFunctions_8h_html_a7924d8503ea8dee9aa898dcac311f3ad"><div class="ttname"><a href="Functions_8h.html#a7924d8503ea8dee9aa898dcac311f3ad">chooseToEdit</a></div><div class="ttdeci">void chooseToEdit(Contest *contest)</div><div class="ttdef"><b>Definition:</b> ConsoleUI.cpp:63</div></div>
+<div class="ttc" id="aFunctions_8h_html_aac9856d8e4becaf4d12f5b641074995f"><div class="ttname"><a href="Functions_8h.html#aac9856d8e4becaf4d12f5b641074995f">printList</a></div><div class="ttdeci">void printList(ListElement *head)</div><div class="ttdef"><b>Definition:</b> ConsoleUI.cpp:26</div></div>
+<div class="ttc" id="aFunctions_8h_html_ae787e80d3e3f7956fd516b3419727bcf"><div class="ttname"><a href="Functions_8h.html#ae787e80d3e3f7956fd516b3419727bcf">findByPlace</a></div><div class="ttdeci">Contest * findByPlace(ListElement *head, std::string place)</div><div class="ttdef"><b>Definition:</b> ListFunctions.cpp:39</div></div>
+<div class="ttc" id="aFunctions_8h_html_a905970ef9943df721fb5a8e32e2ef594"><div class="ttname"><a href="Functions_8h.html#a905970ef9943df721fb5a8e32e2ef594">printRanking</a></div><div class="ttdeci">void printRanking(SkierList *list)</div><div class="ttdef"><b>Definition:</b> ConsoleUI.cpp:126</div></div>
+<div class="ttc" id="aFunctions_8h_html_ab13e858612c64eeef73aff1d8a03945e"><div class="ttname"><a href="Functions_8h.html#ab13e858612c64eeef73aff1d8a03945e">printMenu</a></div><div class="ttdeci">void printMenu()</div><div class="ttdef"><b>Definition:</b> ConsoleUI.cpp:11</div></div>
+<div class="ttc" id="aFunctions_8h_html_a9611bf08463a0cdf840044af68cd9906"><div class="ttname"><a href="Functions_8h.html#a9611bf08463a0cdf840044af68cd9906">printSkier</a></div><div class="ttdeci">void printSkier(Skier *skier)</div><div class="ttdef"><b>Definition:</b> ConsoleUI.cpp:55</div></div>
+<div class="ttc" id="aFunctions_8h_html_a08155a5447b3c054a853fc390cf7fb6c"><div class="ttname"><a href="Functions_8h.html#a08155a5447b3c054a853fc390cf7fb6c">buildRankingList</a></div><div class="ttdeci">SkierList * buildRankingList(ListElement *head)</div><div class="ttdef"><b>Definition:</b> PointFunctions.cpp:51</div></div>
+<div class="ttc" id="aFunctions_8h_html_a87ac3d9f4a94f3c26faa870001e23dc4"><div class="ttname"><a href="Functions_8h.html#a87ac3d9f4a94f3c26faa870001e23dc4">deleteListWithSublist</a></div><div class="ttdeci">void deleteListWithSublist(ListElement *&amp;head)</div><div class="ttdef"><b>Definition:</b> ListFunctions.cpp:274</div></div>
+<div class="ttc" id="astructContest_html"><div class="ttname"><a href="structContest.html">Contest</a></div><div class="ttdef"><b>Definition:</b> Structure.h:35</div></div>
+<div class="ttc" id="aFunctions_8h_html_a2d1bdfedb71dc37e5e2a7ab9ed02e737"><div class="ttname"><a href="Functions_8h.html#a2d1bdfedb71dc37e5e2a7ab9ed02e737">buildNameList</a></div><div class="ttdeci">ListElement * buildNameList(ListElement *head, std::string name)</div><div class="ttdef"><b>Definition:</b> ListFunctions.cpp:71</div></div>
+<div class="ttc" id="aFunctions_8h_html_a1f9835f7a6368370e28aebe6683907ad"><div class="ttname"><a href="Functions_8h.html#a1f9835f7a6368370e28aebe6683907ad">addToList</a></div><div class="ttdeci">void addToList(ListElement *&amp;head, Contest *contest)</div><div class="ttdef"><b>Definition:</b> ListFunctions.cpp:11</div></div>
+<div class="ttc" id="aFunctions_8h_html_a19e5f4b5e19e7088f4b2cf6630f6d064"><div class="ttname"><a href="Functions_8h.html#a19e5f4b5e19e7088f4b2cf6630f6d064">getIntFromUser</a></div><div class="ttdeci">int getIntFromUser()</div><div class="ttdef"><b>Definition:</b> UserInputFunctions.cpp:10</div></div>
+<div class="ttc" id="aFunctions_8h_html_a3d7a98112998393b3dabcc280e5d3048"><div class="ttname"><a href="Functions_8h.html#a3d7a98112998393b3dabcc280e5d3048">showRanking</a></div><div class="ttdeci">void showRanking(ListElement *head)</div><div class="ttdef"><b>Definition:</b> ConsoleUI.cpp:115</div></div>
+<div class="ttc" id="aFunctions_8h_html_a2ab1df4bb71cafc37fd81f68c34bd94c"><div class="ttname"><a href="Functions_8h.html#a2ab1df4bb71cafc37fd81f68c34bd94c">saveToFile</a></div><div class="ttdeci">void saveToFile(ListElement *head, std::string fileName)</div><div class="ttdef"><b>Definition:</b> FileFunctions.cpp:106</div></div>
+<div class="ttc" id="astructDate_html"><div class="ttname"><a href="structDate.html">Date</a></div><div class="ttdef"><b>Definition:</b> Structure.h:9</div></div>
+<div class="ttc" id="aFunctions_8h_html_a6a3f4323c9fe6c4d9e5eb86af79b74ee"><div class="ttname"><a href="Functions_8h.html#a6a3f4323c9fe6c4d9e5eb86af79b74ee">sortByDate</a></div><div class="ttdeci">void sortByDate(ListElement *&amp;head)</div><div class="ttdef"><b>Definition:</b> ListFunctions.cpp:115</div></div>
+<div class="ttc" id="aFunctions_8h_html_aa053ca1f498eb3647de90facdc438252"><div class="ttname"><a href="Functions_8h.html#aa053ca1f498eb3647de90facdc438252">deleteSkierList</a></div><div class="ttdeci">void deleteSkierList(Skier *&amp;head)</div><div class="ttdef"><b>Definition:</b> ListFunctions.cpp:263</div></div>
+<div class="ttc" id="aFunctions_8h_html_af1bf0b461ec55ddd83334763caee4572"><div class="ttname"><a href="Functions_8h.html#af1bf0b461ec55ddd83334763caee4572">showScoresByName</a></div><div class="ttdeci">void showScoresByName(ListElement *head)</div><div class="ttdef"><b>Definition:</b> ConsoleUI.cpp:96</div></div>
+<div class="ttc" id="aFunctions_8h_html_abafba4eaa19a3975f531d647087db6d2"><div class="ttname"><a href="Functions_8h.html#abafba4eaa19a3975f531d647087db6d2">findByName</a></div><div class="ttdeci">Skier * findByName(SkierList *list, std::string name)</div><div class="ttdef"><b>Definition:</b> ListFunctions.cpp:52</div></div>
+<div class="ttc" id="aFunctions_8h_html_a03309815a60204ed1785e9db83cab471"><div class="ttname"><a href="Functions_8h.html#a03309815a60204ed1785e9db83cab471">editList</a></div><div class="ttdeci">void editList(ListElement *head)</div><div class="ttdef"><b>Definition:</b> ConsoleUI.cpp:84</div></div>
+<div class="ttc" id="aFunctions_8h_html_a456a8999ec96db802daab96fba302f81"><div class="ttname"><a href="Functions_8h.html#a456a8999ec96db802daab96fba302f81">UpdateContest</a></div><div class="ttdeci">void UpdateContest(Contest *contest)</div><div class="ttdef"><b>Definition:</b> UserInputFunctions.cpp:96</div></div>
+<div class="ttc" id="aFunctions_8h_html_ad8675d0b318f3115499de5b99135f25c"><div class="ttname"><a href="Functions_8h.html#ad8675d0b318f3115499de5b99135f25c">findAndUpdateSkier</a></div><div class="ttdeci">void findAndUpdateSkier(Skier *head, int result)</div><div class="ttdef"><b>Definition:</b> UserInputFunctions.cpp:68</div></div>
+<div class="ttc" id="astructSkierList_html"><div class="ttname"><a href="structSkierList.html">SkierList</a></div><div class="ttdef"><b>Definition:</b> Structure.h:26</div></div>
+<div class="ttc" id="aFunctions_8h_html_af8cc2c7802c855a7fc497160938b8cb9"><div class="ttname"><a href="Functions_8h.html#af8cc2c7802c855a7fc497160938b8cb9">dateToNumber</a></div><div class="ttdeci">int dateToNumber(Date *date)</div><div class="ttdef"><b>Definition:</b> PointFunctions.cpp:11</div></div>
+<div class="ttc" id="aFunctions_8h_html_af2db9d74624f58456b23053bd60819f1"><div class="ttname"><a href="Functions_8h.html#af2db9d74624f58456b23053bd60819f1">addToSkierList</a></div><div class="ttdeci">void addToSkierList(SkierList *list, Skier *skier)</div><div class="ttdef"><b>Definition:</b> ListFunctions.cpp:19</div></div>
+<div class="ttc" id="aFunctions_8h_html_a5173d09550d3e49465744b26857d21aa"><div class="ttname"><a href="Functions_8h.html#a5173d09550d3e49465744b26857d21aa">userInput</a></div><div class="ttdeci">void userInput(ListElement *&amp;head)</div><div class="ttdef"><b>Definition:</b> UserInputFunctions.cpp:34</div></div>
+<div class="ttc" id="aStructure_8h_html"><div class="ttname"><a href="Structure_8h.html">Structure.h</a></div></div>
+<div class="ttc" id="aFunctions_8h_html_ab76881ad7dc039440c40fa1ac06c3496"><div class="ttname"><a href="Functions_8h.html#ab76881ad7dc039440c40fa1ac06c3496">getFileName</a></div><div class="ttdeci">std::string getFileName(const char **argv)</div><div class="ttdef"><b>Definition:</b> FileFunctions.cpp:11</div></div>
+<div class="ttc" id="aFunctions_8h_html_ad54dd054e097414e746b9b6930eb9ce4"><div class="ttname"><a href="Functions_8h.html#ad54dd054e097414e746b9b6930eb9ce4">deleteList</a></div><div class="ttdeci">void deleteList(ListElement *&amp;head)</div><div class="ttdef"><b>Definition:</b> ListFunctions.cpp:252</div></div>
+<div class="ttc" id="aFunctions_8h_html_a9f81b1f216c55290c0eea976be13b114"><div class="ttname"><a href="Functions_8h.html#a9f81b1f216c55290c0eea976be13b114">printContest</a></div><div class="ttdeci">void printContest(Contest *item)</div><div class="ttdef"><b>Definition:</b> ConsoleUI.cpp:40</div></div>
+<div class="ttc" id="astructSkier_html"><div class="ttname"><a href="structSkier.html">Skier</a></div><div class="ttdef"><b>Definition:</b> Structure.h:16</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

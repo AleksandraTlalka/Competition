@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Narty: Dokumentacja pliku ListFunctions.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Narty
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku ListFunctions.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &quot;<a class="el" href="Constans_8h_source.html">Constans.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Structure_8h_source.html">Structure.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Functions_8h_source.html">Functions.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla ListFunctions.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="ListFunctions_8cpp__incl.png" border="0" usemap="#ListFunctions_8cpp" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a1f9835f7a6368370e28aebe6683907ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ListFunctions_8cpp.html#a1f9835f7a6368370e28aebe6683907ad">addToList</a> (<a class="el" href="structListElement.html">ListElement</a> *&amp;head, <a class="el" href="structContest.html">Contest</a> *contest)</td></tr>
+<tr class="separator:a1f9835f7a6368370e28aebe6683907ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2db9d74624f58456b23053bd60819f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ListFunctions_8cpp.html#af2db9d74624f58456b23053bd60819f1">addToSkierList</a> (<a class="el" href="structSkierList.html">SkierList</a> *list, <a class="el" href="structSkier.html">Skier</a> *skier)</td></tr>
+<tr class="separator:af2db9d74624f58456b23053bd60819f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae787e80d3e3f7956fd516b3419727bcf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structContest.html">Contest</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ListFunctions_8cpp.html#ae787e80d3e3f7956fd516b3419727bcf">findByPlace</a> (<a class="el" href="structListElement.html">ListElement</a> *head, std::string place)</td></tr>
+<tr class="separator:ae787e80d3e3f7956fd516b3419727bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abafba4eaa19a3975f531d647087db6d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSkier.html">Skier</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ListFunctions_8cpp.html#abafba4eaa19a3975f531d647087db6d2">findByName</a> (<a class="el" href="structSkierList.html">SkierList</a> *list, std::string name)</td></tr>
+<tr class="separator:abafba4eaa19a3975f531d647087db6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d1bdfedb71dc37e5e2a7ab9ed02e737"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structListElement.html">ListElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ListFunctions_8cpp.html#a2d1bdfedb71dc37e5e2a7ab9ed02e737">buildNameList</a> (<a class="el" href="structListElement.html">ListElement</a> *head, std::string name)</td></tr>
+<tr class="separator:a2d1bdfedb71dc37e5e2a7ab9ed02e737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3f4323c9fe6c4d9e5eb86af79b74ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ListFunctions_8cpp.html#a6a3f4323c9fe6c4d9e5eb86af79b74ee">sortByDate</a> (<a class="el" href="structListElement.html">ListElement</a> *&amp;head)</td></tr>
+<tr class="separator:a6a3f4323c9fe6c4d9e5eb86af79b74ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36e0036d76e5544646557b4d866a6b39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ListFunctions_8cpp.html#a36e0036d76e5544646557b4d866a6b39">sortByResult</a> (<a class="el" href="structSkierList.html">SkierList</a> *skierList)</td></tr>
+<tr class="separator:a36e0036d76e5544646557b4d866a6b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af54f7d870246adcce40fe8a6e0cd50a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ListFunctions_8cpp.html#af54f7d870246adcce40fe8a6e0cd50a9">sortByPoints</a> (<a class="el" href="structSkierList.html">SkierList</a> *skierList)</td></tr>
+<tr class="separator:af54f7d870246adcce40fe8a6e0cd50a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33570068ed2d157e95a40fb0054a4e95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ListFunctions_8cpp.html#a33570068ed2d157e95a40fb0054a4e95">switchSkier</a> (<a class="el" href="structSkier.html">Skier</a> *first, <a class="el" href="structSkier.html">Skier</a> *second)</td></tr>
+<tr class="separator:a33570068ed2d157e95a40fb0054a4e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad54dd054e097414e746b9b6930eb9ce4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ListFunctions_8cpp.html#ad54dd054e097414e746b9b6930eb9ce4">deleteList</a> (<a class="el" href="structListElement.html">ListElement</a> *&amp;head)</td></tr>
+<tr class="separator:ad54dd054e097414e746b9b6930eb9ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa053ca1f498eb3647de90facdc438252"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ListFunctions_8cpp.html#aa053ca1f498eb3647de90facdc438252">deleteSkierList</a> (<a class="el" href="structSkier.html">Skier</a> *&amp;head)</td></tr>
+<tr class="separator:aa053ca1f498eb3647de90facdc438252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87ac3d9f4a94f3c26faa870001e23dc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ListFunctions_8cpp.html#a87ac3d9f4a94f3c26faa870001e23dc4">deleteListWithSublist</a> (<a class="el" href="structListElement.html">ListElement</a> *&amp;head)</td></tr>
+<tr class="separator:a87ac3d9f4a94f3c26faa870001e23dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="a1f9835f7a6368370e28aebe6683907ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f9835f7a6368370e28aebe6683907ad">&#9670;&nbsp;</a></span>addToList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addToList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structListElement.html">ListElement</a> *&amp;&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structContest.html">Contest</a> *&#160;</td>
+          <td class="paramname"><em>contest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2db9d74624f58456b23053bd60819f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2db9d74624f58456b23053bd60819f1">&#9670;&nbsp;</a></span>addToSkierList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addToSkierList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSkierList.html">SkierList</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structSkier.html">Skier</a> *&#160;</td>
+          <td class="paramname"><em>skier</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d1bdfedb71dc37e5e2a7ab9ed02e737"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d1bdfedb71dc37e5e2a7ab9ed02e737">&#9670;&nbsp;</a></span>buildNameList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structListElement.html">ListElement</a>* buildNameList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structListElement.html">ListElement</a> *&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad54dd054e097414e746b9b6930eb9ce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad54dd054e097414e746b9b6930eb9ce4">&#9670;&nbsp;</a></span>deleteList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deleteList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structListElement.html">ListElement</a> *&amp;&#160;</td>
+          <td class="paramname"><em>head</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87ac3d9f4a94f3c26faa870001e23dc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87ac3d9f4a94f3c26faa870001e23dc4">&#9670;&nbsp;</a></span>deleteListWithSublist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deleteListWithSublist </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structListElement.html">ListElement</a> *&amp;&#160;</td>
+          <td class="paramname"><em>head</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa053ca1f498eb3647de90facdc438252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa053ca1f498eb3647de90facdc438252">&#9670;&nbsp;</a></span>deleteSkierList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deleteSkierList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSkier.html">Skier</a> *&amp;&#160;</td>
+          <td class="paramname"><em>head</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abafba4eaa19a3975f531d647087db6d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abafba4eaa19a3975f531d647087db6d2">&#9670;&nbsp;</a></span>findByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structSkier.html">Skier</a>* findByName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSkierList.html">SkierList</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae787e80d3e3f7956fd516b3419727bcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae787e80d3e3f7956fd516b3419727bcf">&#9670;&nbsp;</a></span>findByPlace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structContest.html">Contest</a>* findByPlace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structListElement.html">ListElement</a> *&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>place</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a3f4323c9fe6c4d9e5eb86af79b74ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a3f4323c9fe6c4d9e5eb86af79b74ee">&#9670;&nbsp;</a></span>sortByDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sortByDate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structListElement.html">ListElement</a> *&amp;&#160;</td>
+          <td class="paramname"><em>head</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af54f7d870246adcce40fe8a6e0cd50a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af54f7d870246adcce40fe8a6e0cd50a9">&#9670;&nbsp;</a></span>sortByPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sortByPoints </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSkierList.html">SkierList</a> *&#160;</td>
+          <td class="paramname"><em>skierList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36e0036d76e5544646557b4d866a6b39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36e0036d76e5544646557b4d866a6b39">&#9670;&nbsp;</a></span>sortByResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sortByResult </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSkierList.html">SkierList</a> *&#160;</td>
+          <td class="paramname"><em>skierList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a33570068ed2d157e95a40fb0054a4e95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33570068ed2d157e95a40fb0054a4e95">&#9670;&nbsp;</a></span>switchSkier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void switchSkier </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSkier.html">Skier</a> *&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structSkier.html">Skier</a> *&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
